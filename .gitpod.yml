@@ -1,0 +1,3 @@
+
+tasks:
+  - command: npx @backstage/create-app
