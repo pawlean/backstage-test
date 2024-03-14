@@ -57,6 +57,7 @@ import {
 
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
+import { Gitpod } from '@gitpod-io/backstage-plugin-gitpod';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -130,9 +131,12 @@ const overviewContent = (
     <Grid item md={6} xs={12}>
       <EntityCatalogGraphCard variant="gridItem" height={400} />
     </Grid>
-
+  
     <Grid item md={4} xs={12}>
       <EntityLinksCard />
+    </Grid>
+    <Grid item md={6}>
+      <Gitpod />
     </Grid>
     <Grid item md={8} xs={12}>
       <EntityHasSubcomponentsCard variant="gridItem" />
